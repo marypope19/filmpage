@@ -1,0 +1,74 @@
+html {
+    background: #f7f7f7;
+}
+
+header, footer {
+    background: #333a40;
+    color: white;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+
+header li {
+    display: inline;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*Gör en ruta runt varje film*/
+.film {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+/*När skärmen har en bredd på mer än 600px aktiveras följande kod*/
+@media screen and (min-width: 600px) {
+    #wrapper {
+        flex-direction: row;
+    }
+
+    /*Aside och main hamnar bredvid varandra*/
+    aside {
+        width: 30%;
+    }
+    
+    main {
+        width: 70%;
+    }
+
+    /*22% för att ramen runt filmerna räknas in, därav går inte 25%*/
+    .film {
+        float: left;
+        width: 22%;
+    }
+
+    /*Filmen Den sista resans bild är mindre, 
+    får en margin för att filmerna ska justera sig efter 4 filmer per rad*/
+    #Densistaresan {
+        margin-bottom: 19px;
+    }
+
+    /*När filmtitlarna blir för långa i samband med ändring av fönsterstorlek,
+    bryts orden så att de justerar sig efter 4 filmer per rad*/
+    .break-word {
+        word-wrap: break-word;
+    }
+}

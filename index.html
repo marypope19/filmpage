@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmföretaget</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <!--Header med navigering-->
+    <header>
+        <h1>Filmföretaget</h1>
+        <nav>
+            <ul>
+                <li>Hem</li>
+                <li>Om oss</li>
+                <li>Kontakta oss</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Sidebar med filtrering och sök-->
+    <div id="wrapper">
+        <aside>
+            <section>
+            <input type="search" placeholder="sök...">
+                <h2>Genre</h2>
+                <hr>
+                <ul>
+                    <li>Drama</li>
+                    <li>Thriller</li>
+                    <li>Action</li>
+                    <li>Dokumentär</li>
+                    <li>Sci-fi</li>
+                    <li>Komedi</li>
+                    <li>Barn</li>
+                </ul>
+            </section>
+        </aside>
+    
+        <!--Huvuddel med alla filmer-->
+        <main>
+            <h2>Alla filmer</h2>
+            <div class="film">
+                <img src="Bilder/Interstellar.jpg" alt="Interstellar">
+                <h3 class="break-word">Interstellar</h3>
+                <p>2h 49m</p>
+                <p>Sci-fi</p>
+                <p>2014</p>
+                <!--Vid tryck på knappen aktiveras funktionen-->
+                <button onclick="moreInfoInterstellar()">Mer info</button>
+            </div>
+    
+            <div class="film">
+                <img src="Bilder/Dunepartone.jpg" alt="Dune Part One">
+                <h3 class="break-word">Dune: Part One</h3>
+                <p>2h 35m</p>
+                <p>Sci-fi</p>
+                <p>2021</p>
+                <button onclick="moreInfoDune()">Mer info</button>
+            </div>
+    
+            <div class="film">
+                <img src="Bilder/Hammarskjold.jpg" alt="Hammarskjöld">
+                <h3 class="break-word">Hammarskjöld</h3>
+                <p>1h 54m</p>
+                <p>Thriller</p>
+                <p>2023</p>
+                <button onclick="moreInfoHammarskjold()">Mer info</button>
+            </div>
+    
+            <div class="film">
+                <img id="Densistaresan" src="Bilder/Densistaresan.jpg" alt="Den sista resan">
+                <h3 class="break-word">Den sista resan</h3>
+                <p>1h 30m</p>
+                <p>Dokumentär</p>
+                <p>2024</p>
+                <button onclick="moreInfoDenSista()">Mer info</button>
+            </div>
+    
+            <div class="film">
+                <img src="Bilder/Oppenheimer.jpg" alt="Oppenheimer">
+                <h3 class="break-word">Oppenheimer</h3>
+                <p>3h</p>
+                <p>Drama</p>
+                <p>2023</p>
+                <button onclick="moreInfoOppenheimer()">Mer info</button>
+            </div>
+    
+            <div class="film">
+                <img src="Bilder/Thedarkknight.jpg" alt="The Dark Knight">
+                <h3 class="break-word">The Dark Knight</h3>
+                <p>2h 32m</p>
+                <p>Action</p>
+                <p>2008</p>
+                <button onclick="moreInfoDarkKnight()">Mer info</button>
+            </div>
+    
+            <div class="film">
+                <img src="Bilder/EnmansomheterOve.jpg" alt="En man som heter Ove">
+                <h3 class="break-word">En man som heter Ove</h3>
+                <p>1h 56m</p>
+                <p>Komedi</p>
+                <p>2015</p>
+                <button onclick="moreInfoOve()">Mer info</button>
+            </div>
+    
+            <div class="film">
+                <img src="Bilder/Vemardumammamu.jpg" alt="Vem är du, Mamma Mu?">
+                <h3 class="break-word">Vem är du, Mamma Mu?</h3>
+                <p>1h 6m</p>
+                <p>Barn</p>
+                <p>2023</p>
+                <button onclick="moreInfoMammaMu()">Mer info</button>
+            </div>
+        </main>
+    </div>
+
+    <!--Footer med copyright-->
+    <footer>
+        <h4>&copy; Filmföretaget</h4>
+        <p>Bilder från Filmstaden</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
